@@ -6,19 +6,19 @@ import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.List;
 
-import by.training.finance.beans.Payment;
 import by.training.finance.constants.Constants;
 import by.training.finance.constants.PaymentType;
 import by.training.finance.controller.command.Command;
 import by.training.finance.controller.command.CommandUtils;
 import by.training.finance.controller.constants.ControllerConstants;
 import by.training.finance.controller.constants.ControllerMessages;
+import by.training.finance.entity.Payment;
+import by.training.finance.exception.service.IllegalDateException;
+import by.training.finance.exception.service.InvalidLoginException;
+import by.training.finance.exception.service.InvalidPaymentTypeException;
+import by.training.finance.exception.service.ServiceException;
+import by.training.finance.factory.ServiceFactory;
 import by.training.finance.service.CounterService;
-import by.training.finance.service.exception.IllegalDateException;
-import by.training.finance.service.exception.InvalidLoginException;
-import by.training.finance.service.exception.InvalidPaymentTypeException;
-import by.training.finance.service.exception.ServiceException;
-import by.training.finance.service.factory.ServiceFactory;
 
 public class PaymentsBetweenDates implements Command {
 

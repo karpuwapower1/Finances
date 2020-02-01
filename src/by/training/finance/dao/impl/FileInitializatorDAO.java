@@ -6,11 +6,11 @@ import java.io.RandomAccessFile;
 
 import by.training.finance.dao.InitializatorDAO;
 import by.training.finance.dao.constants.DAOConstants;
-import by.training.finance.dao.exception.DAOException;
-import by.training.finance.dao.exception.IllegalPasswordException;
-import by.training.finance.dao.exception.NoSuchUserException;
-import by.training.finance.dao.exception.UserAlreadyPresentException;
 import by.training.finance.dao.util.InitializatorFormat;
+import by.training.finance.exception.dao.DAOException;
+import by.training.finance.exception.dao.IllegalPasswordException;
+import by.training.finance.exception.dao.NoSuchUserException;
+import by.training.finance.exception.dao.UserAlreadyPresentException;
 
 public class FileInitializatorDAO implements InitializatorDAO {
 

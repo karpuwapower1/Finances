@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
-import by.training.finance.beans.Account;
-import by.training.finance.beans.Category;
+import by.training.finance.entity.Account;
+import by.training.finance.entity.Category;
 
 public class Constants {
 

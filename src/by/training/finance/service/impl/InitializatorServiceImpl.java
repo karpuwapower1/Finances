@@ -1,18 +1,18 @@
 package by.training.finance.service.impl;
 
 import by.training.finance.dao.InitializatorDAO;
-import by.training.finance.dao.exception.DAOException;
-import by.training.finance.dao.exception.IllegalPasswordException;
-import by.training.finance.dao.exception.NoSuchUserException;
-import by.training.finance.dao.exception.UserAlreadyPresentException;
-import by.training.finance.dao.factory.DAOFactory;
+import by.training.finance.exception.dao.DAOException;
+import by.training.finance.exception.dao.IllegalPasswordException;
+import by.training.finance.exception.dao.NoSuchUserException;
+import by.training.finance.exception.dao.UserAlreadyPresentException;
+import by.training.finance.exception.service.InvalidLoginException;
+import by.training.finance.exception.service.InvalidPasswordException;
+import by.training.finance.exception.service.ServiceException;
+import by.training.finance.exception.service.UserAlreadyPresentServiceException;
+import by.training.finance.exception.service.WrongLoginOrPasswordException;
+import by.training.finance.factory.DAOFactory;
 import by.training.finance.service.InitializatorService;
-import by.training.finance.service.exception.InvalidLoginException;
-import by.training.finance.service.exception.InvalidPasswordException;
-import by.training.finance.service.exception.ServiceException;
-import by.training.finance.service.exception.UserAlreadyPresentServiceException;
-import by.training.finance.service.exception.WrongLoginOrPasswordException;
-import by.training.finance.service.validator.Validator;
+import by.training.finance.validator.Validator;
 
 public class InitializatorServiceImpl implements InitializatorService {
 

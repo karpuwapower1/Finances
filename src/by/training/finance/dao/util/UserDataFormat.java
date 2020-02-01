@@ -5,10 +5,10 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.Set;
 
-import by.training.finance.beans.Account;
-import by.training.finance.beans.Category;
 import by.training.finance.constants.PaymentType;
 import by.training.finance.dao.constants.DAOConstants;
+import by.training.finance.entity.Account;
+import by.training.finance.entity.Category;
 
 public class UserDataFormat {
 

@@ -1,6 +1,6 @@
 package by.training.finance.service;
 
-import by.training.finance.service.exception.ServiceException;
+import by.training.finance.exception.service.ServiceException;
 
 public interface InitializatorService {
 	

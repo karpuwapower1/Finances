@@ -2,11 +2,11 @@ package by.training.finance.service;
 
 import java.math.BigDecimal;
 
-import by.training.finance.beans.Account;
-import by.training.finance.beans.Category;
-import by.training.finance.beans.Payment;
-import by.training.finance.beans.User;
-import by.training.finance.service.exception.ServiceException;
+import by.training.finance.entity.Account;
+import by.training.finance.entity.Category;
+import by.training.finance.entity.Payment;
+import by.training.finance.entity.User;
+import by.training.finance.exception.service.ServiceException;
 
 public interface UserService {
 

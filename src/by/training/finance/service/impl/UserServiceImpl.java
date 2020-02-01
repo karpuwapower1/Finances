@@ -3,23 +3,23 @@ package by.training.finance.service.impl;
 import java.math.BigDecimal;
 import java.util.Set;
 
-import by.training.finance.beans.Account;
-import by.training.finance.beans.Category;
-import by.training.finance.beans.Payment;
-import by.training.finance.beans.User;
 import by.training.finance.constants.PaymentType;
 import by.training.finance.dao.CounterDAO;
 import by.training.finance.dao.UserDAO;
-import by.training.finance.dao.exception.DAOException;
-import by.training.finance.dao.factory.DAOFactory;
+import by.training.finance.entity.Account;
+import by.training.finance.entity.Category;
+import by.training.finance.entity.Payment;
+import by.training.finance.entity.User;
+import by.training.finance.exception.dao.DAOException;
+import by.training.finance.exception.service.IllegalAccountException;
+import by.training.finance.exception.service.InvalidAccountException;
+import by.training.finance.exception.service.InvalidCategoryException;
+import by.training.finance.exception.service.InvalidLoginException;
+import by.training.finance.exception.service.InvalidPaymentException;
+import by.training.finance.exception.service.ServiceException;
+import by.training.finance.factory.DAOFactory;
 import by.training.finance.service.UserService;
-import by.training.finance.service.exception.IllegalAccountException;
-import by.training.finance.service.exception.InvalidAccountException;
-import by.training.finance.service.exception.InvalidCategoryException;
-import by.training.finance.service.exception.InvalidLoginException;
-import by.training.finance.service.exception.InvalidPaymentException;
-import by.training.finance.service.exception.ServiceException;
-import by.training.finance.service.validator.Validator;
+import by.training.finance.validator.Validator;
 
 public class UserServiceImpl implements UserService {
 

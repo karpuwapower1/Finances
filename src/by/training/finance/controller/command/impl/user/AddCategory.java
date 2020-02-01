@@ -2,17 +2,17 @@ package by.training.finance.controller.command.impl.user;
 
 import java.util.HashMap;
 
-import by.training.finance.beans.Category;
 import by.training.finance.constants.PaymentType;
 import by.training.finance.controller.command.Command;
 import by.training.finance.controller.command.CommandUtils;
 import by.training.finance.controller.constants.ControllerConstants;
 import by.training.finance.controller.constants.ControllerMessages;
+import by.training.finance.entity.Category;
+import by.training.finance.exception.service.InvalidCategoryException;
+import by.training.finance.exception.service.InvalidLoginException;
+import by.training.finance.exception.service.ServiceException;
+import by.training.finance.factory.ServiceFactory;
 import by.training.finance.service.UserService;
-import by.training.finance.service.exception.InvalidCategoryException;
-import by.training.finance.service.exception.InvalidLoginException;
-import by.training.finance.service.exception.ServiceException;
-import by.training.finance.service.factory.ServiceFactory;
 
 public class AddCategory implements Command {
 

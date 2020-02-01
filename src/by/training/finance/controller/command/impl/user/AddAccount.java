@@ -3,17 +3,17 @@ package by.training.finance.controller.command.impl.user;
 import java.math.BigDecimal;
 import java.util.HashMap;
 
-import by.training.finance.beans.Account;
 import by.training.finance.controller.command.Command;
 import by.training.finance.controller.command.CommandUtils;
 import by.training.finance.controller.constants.ControllerConstants;
 import by.training.finance.controller.constants.ControllerMessages;
+import by.training.finance.entity.Account;
+import by.training.finance.exception.service.IllegalAccountException;
+import by.training.finance.exception.service.InvalidAccountException;
+import by.training.finance.exception.service.InvalidLoginException;
+import by.training.finance.exception.service.ServiceException;
+import by.training.finance.factory.ServiceFactory;
 import by.training.finance.service.UserService;
-import by.training.finance.service.exception.IllegalAccountException;
-import by.training.finance.service.exception.InvalidAccountException;
-import by.training.finance.service.exception.InvalidLoginException;
-import by.training.finance.service.exception.ServiceException;
-import by.training.finance.service.factory.ServiceFactory;
 
 public class AddAccount implements Command {
 	

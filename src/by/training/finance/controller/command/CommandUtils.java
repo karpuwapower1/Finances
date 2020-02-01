@@ -5,12 +5,12 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import by.training.finance.beans.Account;
-import by.training.finance.beans.Category;
-import by.training.finance.beans.Payment;
-import by.training.finance.beans.User;
 import by.training.finance.constants.Constants;
 import by.training.finance.constants.PaymentType;
+import by.training.finance.entity.Account;
+import by.training.finance.entity.Category;
+import by.training.finance.entity.Payment;
+import by.training.finance.entity.User;
 
 public class CommandUtils {
 

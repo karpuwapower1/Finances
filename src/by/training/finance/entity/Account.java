@@ -1,9 +1,9 @@
-package by.training.finance.beans;
+package by.training.finance.entity;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-import by.training.finance.service.exception.IllegalAccountException;
+import by.training.finance.exception.service.IllegalAccountException;
 
 /*
  * 	This class represents user's account.

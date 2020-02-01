@@ -1,4 +1,4 @@
-package by.training.finance.service.exception;
+package by.training.finance.exception.service;
 
 public class InvalidCategoryException extends ServiceException {
 

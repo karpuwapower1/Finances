@@ -1,4 +1,4 @@
-package by.training.finance.dao.factory;
+package by.training.finance.factory;
 
 import java.io.File;
 
@@ -6,10 +6,10 @@ import by.training.finance.dao.CounterDAO;
 import by.training.finance.dao.InitializatorDAO;
 import by.training.finance.dao.UserDAO;
 import by.training.finance.dao.constants.DAOConstants;
-import by.training.finance.dao.exception.DAOException;
 import by.training.finance.dao.impl.FileCounterDAO;
 import by.training.finance.dao.impl.FileInitializatorDAO;
 import by.training.finance.dao.impl.FileUserDAO;
+import by.training.finance.exception.dao.DAOException;
 
 public final class DAOFactory {
 	

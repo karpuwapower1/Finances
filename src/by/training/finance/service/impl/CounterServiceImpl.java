@@ -6,17 +6,17 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import by.training.finance.beans.Payment;
 import by.training.finance.constants.PaymentType;
 import by.training.finance.dao.CounterDAO;
-import by.training.finance.dao.exception.DAOException;
-import by.training.finance.dao.factory.DAOFactory;
+import by.training.finance.entity.Payment;
+import by.training.finance.exception.dao.DAOException;
+import by.training.finance.exception.service.IllegalDateException;
+import by.training.finance.exception.service.InvalidLoginException;
+import by.training.finance.exception.service.InvalidPaymentTypeException;
+import by.training.finance.exception.service.ServiceException;
+import by.training.finance.factory.DAOFactory;
 import by.training.finance.service.CounterService;
-import by.training.finance.service.exception.IllegalDateException;
-import by.training.finance.service.exception.InvalidLoginException;
-import by.training.finance.service.exception.InvalidPaymentTypeException;
-import by.training.finance.service.exception.ServiceException;
-import by.training.finance.service.validator.Validator;
+import by.training.finance.validator.Validator;
 
 public class CounterServiceImpl implements CounterService {
 
