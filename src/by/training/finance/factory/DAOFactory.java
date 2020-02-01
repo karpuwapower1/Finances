@@ -25,7 +25,7 @@ public final class DAOFactory {
 
 	public CounterDAO getCounterBookDAO() throws DAOException {
 		File counterBook = DAOConstants.COUNTERBOOK_FILE_NAME;
-		return FileCounterDAO.getCounterBookDAO(counterBook);
+		return FileCounterDAO.getCounterDAO(counterBook);
 	}
 
 	public InitializatorDAO getInitializatorDAO() throws DAOException {

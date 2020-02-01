@@ -9,6 +9,10 @@ import by.training.finance.service.impl.UserServiceImpl;
 
 public class ServiceFactory {	
 	
+	private final CounterService counterService = new CounterServiceImpl();
+	private final InitializatorService initService = new InitializatorServiceImpl();
+	private final UserService userService = new UserServiceImpl();
+	
 	private ServiceFactory() {}
 	
 	private static class InstanceHolder {
@@ -20,14 +24,14 @@ public class ServiceFactory {
 	}
 	
 	public CounterService getCounterService() {
-		return CounterServiceImpl.getCounterService();
+		return counterService;
 	}
 	
 	public InitializatorService getInitializatorService() {
-		return InitializatorServiceImpl.getInitializatorService();
+		return initService;
 	}
 	
 	public UserService getUserService() {
-		return UserServiceImpl.getUserService();
+		return userService;
 	}
 }

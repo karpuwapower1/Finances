@@ -20,15 +20,7 @@ import by.training.finance.validator.Validator;
 
 public class CounterServiceImpl implements CounterService {
 
-	private static CounterServiceImpl counterService;
 	DAOFactory factory = DAOFactory.getInstance();
-
-	public static CounterService getCounterService() {
-		if (counterService == null) {
-			counterService = new CounterServiceImpl();
-		}
-		return counterService;
-	}
 
 	@Override
 	public List<Payment> getAllPaymentsByType(String login, PaymentType type) throws ServiceException {

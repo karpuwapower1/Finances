@@ -27,7 +27,7 @@ public class FileCounterDAO implements CounterDAO {
 		}
 	}
 
-	public static CounterDAO getCounterBookDAO(File file) throws DAOException {
+	public static CounterDAO getCounterDAO(File file) throws DAOException {
 		if (instance == null) {
 			instance = new FileCounterDAO(file);
 		}
