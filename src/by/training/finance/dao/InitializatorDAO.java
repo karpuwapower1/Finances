@@ -1,6 +1,6 @@
 package by.training.finance.dao;
 
-import by.training.finance.dao.exception.DAOException;
+import by.training.finance.exception.dao.DAOException;
 
 public interface InitializatorDAO {
 

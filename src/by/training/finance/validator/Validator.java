@@ -1,11 +1,11 @@
-package by.training.finance.service.validator;
+package by.training.finance.validator;
 
 import java.math.BigDecimal;
 
-import by.training.finance.beans.Account;
-import by.training.finance.beans.Category;
-import by.training.finance.beans.Payment;
 import by.training.finance.constants.PaymentType;
+import by.training.finance.entity.Account;
+import by.training.finance.entity.Category;
+import by.training.finance.entity.Payment;
 
 public class Validator {
 	

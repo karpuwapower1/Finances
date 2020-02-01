@@ -8,13 +8,13 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Set;
 
-import by.training.finance.beans.Account;
-import by.training.finance.beans.Category;
 import by.training.finance.dao.UserDAO;
 import by.training.finance.dao.constants.DAOConstants;
-import by.training.finance.dao.exception.DAOException;
-import by.training.finance.dao.exception.NoSuchUserException;
 import by.training.finance.dao.util.UserDataFormat;
+import by.training.finance.entity.Account;
+import by.training.finance.entity.Category;
+import by.training.finance.exception.dao.DAOException;
+import by.training.finance.exception.dao.NoSuchUserException;
 
 public class FileUserDAO implements UserDAO {
 

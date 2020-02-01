@@ -7,11 +7,11 @@ import java.io.RandomAccessFile;
 import java.util.ArrayList;
 import java.util.List;
 
-import by.training.finance.beans.Payment;
 import by.training.finance.dao.CounterDAO;
 import by.training.finance.dao.constants.DAOConstants;
-import by.training.finance.dao.exception.DAOException;
 import by.training.finance.dao.util.PaymentFormat;
+import by.training.finance.entity.Payment;
+import by.training.finance.exception.dao.DAOException;
 
 public class FileCounterDAO implements CounterDAO {
 

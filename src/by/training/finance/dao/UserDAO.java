@@ -2,9 +2,9 @@ package by.training.finance.dao;
 
 import java.util.Set;
 
-import by.training.finance.beans.Account;
-import by.training.finance.beans.Category;
-import by.training.finance.dao.exception.DAOException;
+import by.training.finance.entity.Account;
+import by.training.finance.entity.Category;
+import by.training.finance.exception.dao.DAOException;
 
 public interface UserDAO {
 

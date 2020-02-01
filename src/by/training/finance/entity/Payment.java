@@ -1,4 +1,4 @@
-package by.training.finance.beans;
+package by.training.finance.entity;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

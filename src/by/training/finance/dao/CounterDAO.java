@@ -2,8 +2,8 @@ package by.training.finance.dao;
 
 import java.util.List;
 
-import by.training.finance.beans.Payment;
-import by.training.finance.dao.exception.DAOException;
+import by.training.finance.entity.Payment;
+import by.training.finance.exception.dao.DAOException;
 
 public interface CounterDAO {
 

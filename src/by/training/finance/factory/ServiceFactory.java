@@ -1,4 +1,4 @@
-package by.training.finance.service.factory;
+package by.training.finance.factory;
 
 import by.training.finance.service.CounterService;
 import by.training.finance.service.InitializatorService;
@@ -7,8 +7,7 @@ import by.training.finance.service.impl.CounterServiceImpl;
 import by.training.finance.service.impl.InitializatorServiceImpl;
 import by.training.finance.service.impl.UserServiceImpl;
 
-public class ServiceFactory {
-	
+public class ServiceFactory {	
 	
 	private ServiceFactory() {}
 	

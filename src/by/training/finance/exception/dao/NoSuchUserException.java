@@ -1,4 +1,4 @@
-package by.training.finance.dao.exception;
+package by.training.finance.exception.dao;
 
 public class NoSuchUserException extends DAOException {
 	

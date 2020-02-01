@@ -4,9 +4,9 @@ import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.List;
 
-import by.training.finance.beans.Payment;
 import by.training.finance.constants.PaymentType;
-import by.training.finance.service.exception.ServiceException;
+import by.training.finance.entity.Payment;
+import by.training.finance.exception.service.ServiceException;
 
 public interface CounterService {
 

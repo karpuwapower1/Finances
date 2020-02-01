@@ -6,12 +6,12 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 
-import by.training.finance.beans.Category;
-import by.training.finance.beans.Payment;
 import by.training.finance.constants.Constants;
 import by.training.finance.constants.PaymentType;
 import by.training.finance.dao.constants.DAOConstants;
-import by.training.finance.dao.exception.DAOException;
+import by.training.finance.entity.Category;
+import by.training.finance.entity.Payment;
+import by.training.finance.exception.dao.DAOException;
 
 public class PaymentFormat {
 
