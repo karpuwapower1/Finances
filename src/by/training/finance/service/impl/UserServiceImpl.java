@@ -23,19 +23,8 @@ import by.training.finance.validator.Validator;
 
 public class UserServiceImpl implements UserService {
 
-	private static UserService service;
 	DAOFactory factory = DAOFactory.getInstance();
-
-	private UserServiceImpl() {
-	}
-
-	public static UserService getUserService() {
-		if (service == null) {
-			service = new UserServiceImpl();
-		}
-		return service;
-	}
-
+	
 	@Override
 	public User createNewUser(String login) throws ServiceException {
 		User user = new User(login);

@@ -16,18 +16,7 @@ import by.training.finance.validator.Validator;
 
 public class InitializatorServiceImpl implements InitializatorService {
 
-	private static InitializatorServiceImpl initService;
 	private DAOFactory factory = DAOFactory.getInstance();
-
-	private InitializatorServiceImpl() {
-	}
-
-	public static InitializatorService getInitializatorService() {
-		if (initService == null) {
-			initService = new InitializatorServiceImpl();
-		}
-		return initService;
-	}
 
 	@Override
 	public void register(String login, String password) throws ServiceException {
